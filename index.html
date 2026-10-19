@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maison Sirocco · Maison d’hôtes dans la médina</title>
+<meta property="og:image" content="https://salimbennani39.github.io/maison-sirocco/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Maison Sirocco, maison d’hôtes confidentielle dans la médina de Tanger. Six chambres, six villes du Maroc, un rooftop face au port.">
+<meta name="theme-color" content="#17110d">
+<link rel="icon" href="assets/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="scrollcraft.css">
+<link rel="stylesheet" href="sirocco.css">
+</head>
+<body>
+
+<div class="sc-grain" aria-hidden="true"></div>
+
+<a class="skip" href="#reserver">Aller à la réservation</a>
+
+<header class="bar" id="bar">
+  <a class="bar__mark" href="#top" aria-label="Maison Sirocco, retour en haut">
+    <img src="assets/logo-h.png" width="391" height="108" alt="Maison Sirocco">
+  </a>
+  <a class="btn btn--bar" href="#reserver">Réserver</a>
+</header>
+
+<!-- The route map is the navigation: every stop is a link. -->
+<nav class="route" id="route" aria-label="Itinéraire">
+  <button class="route__toggle" type="button" aria-expanded="false" aria-controls="route-list">
+    <svg class="route__map" viewBox="-6 -8 176 166" aria-hidden="true">
+      <path class="map-land" d=""></path>
+      <g class="map-legs"></g>
+      <g class="map-dots"></g>
+    </svg>
+    <span class="route__words">
+      <span class="route__here-label">Escale</span>
+      <span class="route__here" id="route-here">Tanger</span>
+    </span>
+  </button>
+  <div class="route__panel">
+    <ol class="route__list" id="route-list">
+      <li><a href="#top" data-stop="tanger">Tanger</a></li>
+      <li><a href="#room-chefchaouen" data-stop="chefchaouen">Chefchaouen</a></li>
+      <li><a href="#room-fes" data-stop="fes">Fès</a></li>
+      <li><a href="#room-marrakech" data-stop="marrakech">Marrakech</a></li>
+      <li><a href="#room-ouarzazate" data-stop="ouarzazate">Ouarzazate</a></li>
+      <li><a href="#room-essaouira" data-stop="essaouira">Essaouira</a></li>
+      <li><a href="#room-dakhla" data-stop="dakhla">Dakhla</a></li>
+      <li><a href="#sky" data-stop="sky">SKY, le rooftop</a></li>
+      <li><a href="#reserver" data-stop="reserver">Réserver</a></li>
+    </ol>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- 1 · THRESHOLD. Four planes: the rooftop view (far), warm haze, the
+       arch's inner reveal (mid), the plaster wall face (near). Scrolling walks
+       you through the arch. -->
+  <section class="hero" id="hero" data-sc-act="pin" data-sc-span="2.1">
+    <div data-sc-stage class="hero__stage">
+      <div class="hero__view" data-plane="view">
+        <picture>
+          <source media="(max-width: 760px)" srcset="assets/hero-view.jpg">
+          <img src="assets/hero-view-wide.jpg" width="1536" height="1024" alt="Le rooftop de Maison Sirocco sous sa paillote, la mer et le port de Tanger en contrebas.">
+        </picture>
+      </div>
+      <div class="hero__haze" data-plane="haze" aria-hidden="true"></div>
+      <div class="hero__reveal" data-plane="reveal" aria-hidden="true"></div>
+      <div class="hero__wall" data-plane="wall">
+        <div class="hero__copy">
+          <h1 class="hero__title">Maison Sirocco</h1>
+          <p class="hero__lede">Une maison d’hôtes confidentielle au cœur de la médina de Tanger, où l’élégance marocaine s’exprime en toute simplicité.</p>
+          <a class="hero__go" href="#voyage">Commencer le voyage</a>
+        </div>
+      </div>
+      <div class="hero__band" aria-hidden="true"></div>
+      <p class="hero__after" data-plane="after">Au-dessus de la médina, face à la mer.</p>
+    </div>
+  </section>
+
+  <!-- 2 · REFUGE. The quiet document before the peak. -->
+  <section class="refuge" data-sc-act="flow">
+    <div class="sc-wrap refuge__grid">
+      <div class="refuge__text sc-stack" data-sc-in data-sc-stagger="70">
+        <p class="eyebrow">Médina de Tanger, face au port</p>
+        <h2 class="display display--lg">Derrière des murs discrets, six chambres.</h2>
+        <p class="body">Nichée au cœur de la médina historique, Maison Sirocco est une maison d’hôtes intimiste où l’architecture marocaine rencontre une élégance contemporaine.</p>
+        <p class="body">Chaque chambre rend hommage à une ville du Maroc. Entre artisanat traditionnel, matières naturelles et lumière douce, la maison offre un refuge paisible au milieu de l’effervescence de Tanger.</p>
+        <p class="refuge__turn">Six chambres, six villes. Le voyage part d’ici.</p>
+      </div>
+      <div class="refuge__media">
+        <figure class="refuge__main" data-sc-reveal="up" data-sc-reveal-at="0.04 0.42">
+          <img src="assets/refuge-arch.jpg" width="1024" height="1536" loading="lazy" alt="Tête de lit en plâtre sculpté et lanterne de laiton dans une chambre de Maison Sirocco.">
+        </figure>
+        <figure class="refuge__aside" data-sc-parallax="-0.9">
+          <img src="assets/ig-mirror.jpg" width="742" height="1280" loading="lazy" alt="Miroir doré et vasque sur un mur rouge profond.">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · THE VOYAGE (peak). One stage, six cities. The page regrades to each
+       city; every room opens through the Maison Sirocco arch. -->
+  <section class="voyage" id="voyage" data-sc-act="pin" data-sc-span="6.4" aria-label="Les six chambres">
+    <div data-sc-stage class="voyage__stage">
+      <div class="voyage__depart">
+        <p class="eyebrow eyebrow--on-dark">Départ de Tanger</p>
+        <h2 class="display display--xl">Traverser le Maroc en six chambres.</h2>
+      </div>
+
+      <svg class="voyage__map" viewBox="-6 -8 176 166" aria-hidden="true">
+        <path class="map-land" d=""></path>
+        <g class="map-legs"></g>
+        <g class="map-dots map-dots--labels"></g>
+      </svg>
+
+      <div class="voyage__rooms">
+        <article class="room" id="room-chefchaouen" data-city="chefchaouen" data-ground="#1b3963" data-accent="#e3c690">
+          <div class="room__media">
+            <div class="room__arch"><img src="assets/room-chefchaouen.jpg" width="1024" height="1536" alt="Chambre Chefchaouen : niches éclairées dans le plâtre, coussins bleus et blancs."></div>
+            <img class="room__detail" src="assets/room-chefchaouen-d.jpg" width="1024" height="1536" loading="lazy" alt="Salle de bain en tadelakt bleu.">
+          </div>
+          <div class="room__text">
+            <p class="room__kicker">Chambre</p>
+            <h3 class="room__city">Chefchaouen</h3>
+            <p class="room__line">La sérénité de la ville bleue</p>
+            <dl class="room__facts">
+              <div><dt>Voyageurs</dt><dd>3</dd></div>
+              <div><dt>Lits</dt><dd>2</dd></div>
+              <div><dt>Salle de bain</dt><dd>1</dd></div>
+              <div><dt>La ville</dt><dd>35,17° N · 5,27° O</dd></div>
+            </dl>
+            <p class="room__desc">Murs aux nuances de bleu, lanternes artisanales et matières naturelles : les ruelles silencieuses du Rif, dans une chambre qui invite à ralentir.</p>
+            <button class="room__choose" type="button" aria-pressed="false" data-choose="Chefchaouen">Choisir cette chambre</button>
+          </div>
+        </article>
+
+        <article class="room" id="room-fes" data-city="fes" data-ground="#1d3b2f" data-accent="#e0c48c">
+          <div class="room__media">
+            <div class="room__arch"><img src="assets/room-fes.jpg" width="1024" height="1536" loading="lazy" alt="Chambre Fès : arche de plâtre sculpté au-dessus du lit, lanterne de laiton."></div>
+            <img class="room__detail" src="assets/room-fes-d.jpg" width="1024" height="1536" loading="lazy" alt="Salle de bain en tadelakt vert et laiton.">
+          </div>
+          <div class="room__text">
+            <p class="room__kicker">Chambre</p>
+            <h3 class="room__city">Fès</h3>
+            <p class="room__line">L’élégance impériale et l’héritage artisanal</p>
+            <dl class="room__facts">
+              <div><dt>Voyageurs</dt><dd>2</dd></div>
+              <div><dt>Lits</dt><dd>1</dd></div>
+              <div><dt>Salle de bain</dt><dd>1</dd></div>
+              <div><dt>La ville</dt><dd>34,03° N · 5,00° O</dd></div>
+            </dl>
+            <p class="room__desc">Tons verts profonds, matières nobles et touches d’artisanat marocain, comme les palais cachés de la médina.</p>
+            <button class="room__choose" type="button" aria-pressed="false" data-choose="Fès">Choisir cette chambre</button>
+          </div>
+        </article>
+
+        <article class="room" id="room-marrakech" data-city="marrakech" data-ground="#6a2217" data-accent="#efcf98">
+          <div class="room__media">
+            <div class="room__arch"><img src="assets/room-marrakech.jpg" width="1024" height="1536" loading="lazy" alt="Chambre Marrakech : tête de lit en arche lumineuse, tapis rouge et coussins terre."></div>
+            <img class="room__detail" src="assets/room-marrakech-d.jpg" width="1024" height="1536" loading="lazy" alt="Vasque de laiton et miroir ciselé sur un mur rose.">
+          </div>
+          <div class="room__text">
+            <p class="room__kicker">Chambre</p>
+            <h3 class="room__city">Marrakech</h3>
+            <p class="room__line">La chaleur vibrante de la ville ocre</p>
+            <dl class="room__facts">
+              <div><dt>Voyageurs</dt><dd>3</dd></div>
+              <div><dt>Lits</dt><dd>2</dd></div>
+              <div><dt>Salle de bain</dt><dd>1</dd></div>
+              <div><dt>La ville</dt><dd>31,63° N · 8,01° O</dd></div>
+            </dl>
+            <p class="room__desc">Teintes profondes, matières naturelles et artisanat : l’atmosphère enveloppante des riads cachés de la médina.</p>
+            <button class="room__choose" type="button" aria-pressed="false" data-choose="Marrakech">Choisir cette chambre</button>
+          </div>
+        </article>
+
+        <article class="room" id="room-ouarzazate" data-city="ouarzazate" data-ground="#74401f" data-accent="#f0d29c">
+          <div class="room__media">
+            <div class="room__arch"><img src="assets/room-ouarzazate.jpg" width="1024" height="1536" loading="lazy" alt="Chambre Ouarzazate : mur de niches en plâtre et poteries de terre."></div>
+            <img class="room__detail" src="assets/room-ouarzazate-d.jpg" width="1024" height="1536" loading="lazy" alt="Salle de bain en tadelakt rosé, douche en zellige terre cuite.">
+          </div>
+          <div class="room__text">
+            <p class="room__kicker">Chambre</p>
+            <h3 class="room__city">Ouarzazate</h3>
+            <p class="room__line">L’esprit des terres ocres</p>
+            <dl class="room__facts">
+              <div><dt>Voyageurs</dt><dd>2</dd></div>
+              <div><dt>Lits</dt><dd>1 ou 2</dd></div>
+              <div><dt>Salle de bain</dt><dd>1</dd></div>
+              <div><dt>La ville</dt><dd>30,92° N · 6,89° O</dd></div>
+            </dl>
+            <p class="room__desc">Teintes ocres et lignes sobres : la chaleur minérale des kasbahs en pisé, aux portes du désert.</p>
+            <button class="room__choose" type="button" aria-pressed="false" data-choose="Ouarzazate">Choisir cette chambre</button>
+          </div>
+        </article>
+
+        <article class="room" id="room-essaouira" data-city="essaouira" data-ground="#1c4954" data-accent="#e6cb95">
+          <div class="room__media">
+            <div class="room__arch"><img src="assets/room-essaouira.jpg" width="1024" height="1536" loading="lazy" alt="Chambre Essaouira : murs blancs sculptés, niche lumineuse, coussins à motifs bleus."></div>
+            <img class="room__detail" src="assets/room-essaouira-d.jpg" width="1024" height="1536" loading="lazy" alt="Douche en zellige bleu cobalt et robinetterie de laiton.">
+          </div>
+          <div class="room__text">
+            <p class="room__kicker">Chambre</p>
+            <h3 class="room__city">Essaouira</h3>
+            <p class="room__line">La douceur atlantique et l’esprit des alizés</p>
+            <dl class="room__facts">
+              <div><dt>Voyageurs</dt><dd>2</dd></div>
+              <div><dt>Lits</dt><dd>1 ou 2</dd></div>
+              <div><dt>Salle de bain</dt><dd>1</dd></div>
+              <div><dt>La ville</dt><dd>31,51° N · 9,77° O</dd></div>
+            </dl>
+            <p class="room__desc">Nuances claires et lignes épurées : la brise marine et la lumière si particulière de la cité des alizés.</p>
+            <button class="room__choose" type="button" aria-pressed="false" data-choose="Essaouira">Choisir cette chambre</button>
+          </div>
+        </article>
+
+        <article class="room" id="room-dakhla" data-city="dakhla" data-ground="#5e4b31" data-accent="#f2d7a6">
+          <div class="room__media">
+            <div class="room__arch"><img src="assets/room-dakhla.jpg" width="1024" height="1536" loading="lazy" alt="Chambre Dakhla : lits superposés dans des niches beiges, tapis berbère."></div>
+            <img class="room__detail" src="assets/room-dakhla-d.jpg" width="1024" height="1536" loading="lazy" alt="Vasque de pierre sous deux suspensions en fibre naturelle.">
+          </div>
+          <div class="room__text">
+            <p class="room__kicker">Chambre</p>
+            <h3 class="room__city">Dakhla</h3>
+            <p class="room__line">La sérénité minérale du sud marocain</p>
+            <dl class="room__facts">
+              <div><dt>Voyageurs</dt><dd>2</dd></div>
+              <div><dt>Lits</dt><dd>1 ou 2</dd></div>
+              <div><dt>Salle de bain</dt><dd>1</dd></div>
+              <div><dt>La ville</dt><dd>23,68° N · 15,96° O</dd></div>
+            </dl>
+            <p class="room__desc">Tons beiges naturels et matières organiques : la simplicité élégante des horizons du sud.</p>
+            <button class="room__choose" type="button" aria-pressed="false" data-choose="Dakhla">Choisir cette chambre</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · CHAY & THE TABLE. Sideways, like a table being laid. -->
+  <section class="table" data-sc-act="pan" data-sc-span="3.4" aria-label="CHAY et la table">
+    <div data-sc-stage class="table__stage">
+      <div class="table__rail" data-sc-pan="0.04">
+        <div class="table__lead">
+          <h2 class="display display--lg">CHAY, le salon de thé.</h2>
+          <p class="body">Le rituel du thé, les gâteaux marocains et le petit-déjeuner préparé chaque matin. Ouvert à tous, tous les jours de 10h00 à 22h30.</p>
+        </div>
+        <figure class="dish dish--tall">
+          <div class="dish__img"><img src="assets/ig-chay.jpg" width="742" height="1280" loading="lazy" alt="Le salon CHAY : lanternes ciselées, plateaux de cuivre et arches."></div>
+          <figcaption><span class="dish__name">Le salon CHAY</span><span class="dish__note">Lanternes, cuivre et arches</span></figcaption>
+        </figure>
+        <figure class="dish">
+          <div class="dish__img"><img src="assets/menu-the.jpg" width="1024" height="1024" loading="lazy" alt="Verre de thé à la menthe fumant et théière d’argent."></div>
+          <figcaption><span class="dish__name">Thé au choix</span><span class="dish__note">Menthe, verveine ou fleur d’oranger · 28 DH</span></figcaption>
+        </figure>
+        <figure class="dish dish--low">
+          <div class="dish__img"><img src="assets/menu-chay.jpg" width="1024" height="1024" loading="lazy" alt="CHAY Time Signature : boisson signature, salés et gâteaux marocains."></div>
+          <figcaption><span class="dish__name">CHAY Time Signature</span><span class="dish__note">1 boisson signature, 3 salés, 3 gâteaux · 125 DH</span></figcaption>
+        </figure>
+        <figure class="dish">
+          <div class="dish__img"><img src="assets/menu-gateaux.jpg" width="1024" height="1024" loading="lazy" alt="Assiette de gâteaux marocains légers."></div>
+          <figcaption><span class="dish__name">Gâteaux marocains</span><span class="dish__note">Sélection à partager · 75 DH</span></figcaption>
+        </figure>
+        <figure class="dish dish--tall">
+          <div class="dish__img"><img src="assets/table-breakfast.jpg" width="1024" height="1536" loading="lazy" alt="Petit-déjeuner marocain : msemen, œufs, miel, thé à la menthe."></div>
+          <figcaption><span class="dish__name">Le petit-déjeuner</span><span class="dish__note">Marocain, préparé chaque matin</span></figcaption>
+        </figure>
+        <p class="table__end">Le thé se sert aussi sur le rooftop.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · KARIM. Information, compressed. -->
+  <section class="host" data-sc-act="flow">
+    <div class="host__grid">
+      <figure class="host__media" data-sc-reveal="right" data-sc-reveal-at="0.02 0.4">
+        <img src="assets/ig-tea.jpg" width="742" height="1280" loading="lazy" alt="Le thé versé à table, plateau d’argent et biscuits maison.">
+      </figure>
+      <div class="host__text sc-stack" data-sc-in data-sc-stagger="70">
+        <h2 class="display display--lg">Accueillis par Karim, natif du quartier.</h2>
+        <p class="body">À Maison Sirocco, on ne propose pas seulement une chambre : on vous reçoit. Un service attentionné, humain et sur mesure, pour un séjour fluide et chaleureux.</p>
+        <ul class="host__list">
+          <li>Accueil à votre arrivée dans la médina</li>
+          <li>Assistance bagages</li>
+          <li>Conseils locaux authentiques</li>
+          <li>Transferts et activités culturelles</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · SKY. The same rooftop, morning to night, under your hand. -->
+  <section class="sky" id="sky" data-sc-act="pin" data-sc-span="2.6">
+    <div data-sc-stage class="sky__stage">
+      <div class="sky__frame" data-sc-parallax="-0.8">
+        <img class="sky__img sky__img--day" src="assets/sky-day.jpg" width="1024" height="1536" loading="lazy" alt="Le rooftop SKY en journée, la baie de Tanger.">
+        <img class="sky__img sky__img--dusk" src="assets/sky-dusk.jpg" width="1024" height="1536" loading="lazy" alt="Le rooftop au coucher du soleil sur le port.">
+        <img class="sky__img sky__img--night" src="assets/sky-night.jpg" width="1024" height="1536" loading="lazy" alt="Le rooftop la nuit, les lumières du port.">
+      </div>
+      <div class="sky__band" aria-hidden="true"></div>
+      <div class="sky__copy">
+        <h2 class="display display--lg">SKY, le rooftop.</h2>
+        <p class="body body--on-dark">Face à la mer et au Port de Tanger Ville. Le petit-déjeuner le matin, le soleil qui descend sur la baie, puis les lumières du port.</p>
+        <ol class="sky__time" aria-label="Moment de la journée">
+          <li data-t="0">Le matin</li>
+          <li data-t="1">Le coucher du soleil</li>
+          <li data-t="2">La nuit</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · THE TICKET. The room you chose arrives already stamped. -->
+  <section class="ticket" id="reserver" data-sc-act="flow">
+    <div class="sc-wrap ticket__grid">
+      <div class="ticket__intro sc-stack" data-sc-in data-sc-stagger="70">
+        <h2 class="display display--lg">Votre carnet de voyage.</h2>
+        <p class="body">Avec seulement six chambres, les disponibilités sont naturellement limitées. Réservez en direct : votre demande part sur WhatsApp et l’équipe de Maison Sirocco vous confirme la disponibilité.</p>
+        <p class="body ticket__alt">Ou par téléphone au <a href="tel:+34647591229">+34 647 591 229</a>, ou par e-mail à <a href="mailto:contact@example.com">contact@example.com</a>.</p>
+      </div>
+
+      <form class="slip" id="slip" action="https://wa.me/34647591229" method="get" target="_blank" novalidate>
+        <div class="slip__head">
+          <img src="assets/logo-mark.png" width="76" height="108" alt="">
+          <div>
+            <p class="slip__title">Maison Sirocco</p>
+            <p class="slip__sub">4 Rue des Almohades, Tanger</p>
+          </div>
+          <div class="stamp" id="stamp" aria-hidden="true"><span class="stamp__k">Chambre</span><span class="stamp__c" id="stamp-city"></span></div>
+        </div>
+        <div class="slip__fields">
+          <label class="field"><span>Arrivée</span><input type="date" name="arrivee" id="f-in" required></label>
+          <label class="field"><span>Départ</span><input type="date" name="depart" id="f-out" required></label>
+          <label class="field"><span>Voyageurs</span>
+            <select name="voyageurs" id="f-guests">
+              <option>1</option><option selected>2</option><option>3</option>
+            </select>
+          </label>
+          <label class="field"><span>Chambre</span>
+            <select name="chambre" id="f-room">
+              <option value="">Sans préférence</option>
+              <option>Chefchaouen</option><option>Fès</option><option>Marrakech</option>
+              <option>Ouarzazate</option><option>Essaouira</option><option>Dakhla</option>
+            </select>
+          </label>
+        </div>
+        <p class="slip__msg" id="slip-msg" role="status" aria-live="polite"></p>
+        <div class="slip__foot">
+          <button class="btn btn--slip" type="submit">Réserver</button>
+          <p class="slip__note">Ouvre WhatsApp avec votre demande. Ce n’est pas encore une réservation confirmée.</p>
+        </div>
+      </form>
+    </div>
+
+    <footer class="foot sc-wrap">
+      <img class="foot__logo" src="assets/logo-h.png" width="391" height="108" alt="Maison Sirocco" loading="lazy">
+      <p>4 Rue des Almohades, Tanger 90000</p>
+      <p><a href="tel:+34647591229">+34 647 591 229</a> · <a href="mailto:contact@example.com">contact@example.com</a> · <a href="#" rel="noopener" target="_blank">Instagram</a></p>
+      <p class="foot__c">© 2026 Maison Sirocco, Tanger médina, maison d’hôtes boutique.</p>
+    </footer>
+  </section>
+
+</main>
+
+<script src="scrollcraft.js"></script>
+<script>ScrollCraft.mount(document.body);</script>
+<script src="sirocco.js"></script>
+</body>
+</html>
