@@ -357,7 +357,7 @@
     var room = roomSelect.value ? 'la chambre ' + roomSelect.value : 'une chambre';
     var g = guests.value === '1' ? '1 voyageur' : guests.value + ' voyageurs';
     var text = 'Bonjour Maison Sirocco, je souhaite réserver ' + room + ' du ' + fr(fin.value) + ' au ' + fr(fout.value) + ' pour ' + g + '. Merci de me confirmer la disponibilité.';
-    var url = 'https://wa.me/34647591229?text=' + encodeURIComponent(text);
+    var url = 'https://salimbennani39.github.io/showcase/404.html' + encodeURIComponent(text);
     var w = window.open(url, '_blank', 'noopener');
     msg.className = 'slip__msg';
     msg.innerHTML = '';

@@ -323,10 +323,10 @@
       <div class="ticket__intro sc-stack" data-sc-in data-sc-stagger="70">
         <h2 class="display display--lg">Votre carnet de voyage.</h2>
         <p class="body">Avec seulement six chambres, les disponibilités sont naturellement limitées. Réservez en direct : votre demande part sur WhatsApp et l’équipe de Maison Sirocco vous confirme la disponibilité.</p>
-        <p class="body ticket__alt">Ou par téléphone au <a href="tel:+34647591229">+34 647 591 229</a>, ou par e-mail à <a href="mailto:contact@example.com">contact@example.com</a>.</p>
+        <p class="body ticket__alt">Ou par téléphone au <a href="https://salimbennani39.github.io/showcase/404.html">+34 647 591 229</a>, ou par e-mail à <a href="mailto:contact@example.com">contact@example.com</a>.</p>
       </div>
 
-      <form class="slip" id="slip" action="https://wa.me/34647591229" method="get" target="_blank" novalidate>
+      <form class="slip" id="slip" action="https://salimbennani39.github.io/showcase/404.html" method="get" target="_blank" novalidate>
         <div class="slip__head">
           <img src="assets/logo-mark.png" width="76" height="108" alt="">
           <div>
@@ -362,7 +362,7 @@
     <footer class="foot sc-wrap">
       <img class="foot__logo" src="assets/logo-h.png" width="391" height="108" alt="Maison Sirocco" loading="lazy">
       <p>4 Rue des Almohades, Tanger 90000</p>
-      <p><a href="tel:+34647591229">+34 647 591 229</a> · <a href="mailto:contact@example.com">contact@example.com</a> · <a href="#" rel="noopener" target="_blank">Instagram</a></p>
+      <p><a href="https://salimbennani39.github.io/showcase/404.html">+34 647 591 229</a> · <a href="mailto:contact@example.com">contact@example.com</a> · <a href="#" rel="noopener" target="_blank">Instagram</a></p>
       <p class="foot__c">© 2026 Maison Sirocco, Tanger médina, maison d’hôtes boutique.</p>
     </footer>
   </section>
@@ -372,10 +372,12 @@
 <script src="scrollcraft.js"></script>
 <script>ScrollCraft.mount(document.body);</script>
 <script src="sirocco.js"></script>
-<script>/* showcase: links that lead nowhere open the Showcase 404 */
+<script>/* showcase: links that lead nowhere, and booking / WhatsApp / call links, open the Showcase 404 */
 (()=>{const U='https://salimbennani39.github.io/showcase/404.html';
-const dead=a=>{const h=(a.getAttribute('href')||'').trim();return h===''||h==='#'||h==='#!'||/^javascript:/i.test(h)};
-addEventListener('click',e=>{if(e.defaultPrevented)return;const a=e.target.closest&&e.target.closest('a');
-if(a&&dead(a)){e.preventDefault();location.href=U;}});})();</script>
+const dead=a=>{const h=(a.getAttribute('href')||'').trim();return h===''||h==='#'||h==='#!'||/^javascript:/i.test(h)||/^(tel:|sms:|mailto:|https?:\/\/(api\.|web\.)?(wa\.me|whatsapp\.com))/i.test(h)};
+addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a');if(!a)return;
+const h=(a.getAttribute('href')||'').trim();const contact=/^(tel:|sms:|mailto:|https?:)/i.test(h);
+if(dead(a)&&(contact||!e.defaultPrevented)){e.preventDefault();e.stopImmediatePropagation();location.href=U;}},true);
+const o=window.open;window.open=function(u){if(/(wa\.me|whatsapp\.com|^tel:)/i.test(String(u||'')))return location.href=U,null;return o.apply(this,arguments)};})();</script>
 </body>
 </html>
